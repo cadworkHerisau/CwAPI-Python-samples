@@ -1,8 +1,23 @@
+import sys
+import utility_controller as uc
 import attribute_controller as ac
 import cadwork
 import element_controller as ec
 import geometry_controller as gc
 import visualization_controller as vc
+
+# get userprofil path
+USERPROFIL = uc.get_3d_userprofil_path()
+
+# appending a path
+sys.path.append("C:/Users/michael.brunner/PycharmProjects/testCWAPI/CwAPI3D-PYTHON-samples/Lib/site-packages")
+
+import pydevd_pycharm
+
+pydevd_pycharm.settrace('localhost', port=5001, stdoutToServer=True, stderrToServer=True)
+
+# printing all paths
+print(sys.path)
 
 beam_width = 120
 beam_height = 240
