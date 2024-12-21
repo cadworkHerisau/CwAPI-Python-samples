@@ -1,8 +1,8 @@
 
 class A:
-    def __init__(self, aInt: int):
+    def __init__(self, number: int):
         print("A Ctor")
-        self.mInt = aInt
+        self.mInt = number
 
     def get_info(self):
         print(f"{str(self.mInt)}")
